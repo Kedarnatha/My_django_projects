@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block title %} third page {% endblock %}
+{% block content %}
+<h1>this is my third page to read </h1>
+<h1>{{var}}</h1>
+<h1>{{msg}}</h1>
+<ul>
+    {% for eachfruits in fruits %}
+    <li>{{ eachfruits }}</li>
+    {% endfor %}
+</ul>
+{% if results %}
+<h2>{{num1}}is number1= is greater than {{num2}}</h2>
+{% else %}
+<h2>{{num2}}is number2= is greater than {{num1}}</h2>
+{% endif %}
+{% endblock %}

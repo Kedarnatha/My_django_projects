@@ -22,6 +22,8 @@ urlpatterns = [
      path('admin/', admin.site.urls),
      path('index',views.index,name='index'),
      path('myfirstpage',views.myfirstpage,name='myfirstpage'),
-     path('secondpage',views.secondpage,name='secondpage')
+     path('secondpage',views.secondpage,name='secondpage'),
+     path("thirdpage",views.thirdpage,name='thirdpage'),
+     path('myimage',views.myimage,name='myimage')
 
 ]

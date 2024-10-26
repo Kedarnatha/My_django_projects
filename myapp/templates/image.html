@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}This is image page{% endblock %}
+{% block content%}
+<h1>This is image page....</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-mid-6" style="margin: 0 auto;">
+            <img src="{% static 'logo.jpg' %}" class="img-fluid" alt="Resposive image">
+        </div>
+    </div>
+</div>
+{% endblock %}
